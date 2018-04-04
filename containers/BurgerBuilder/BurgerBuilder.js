@@ -27,12 +27,10 @@ class BurgerBuilder extends Component
     }
 
     updatePurchaseable = (ingredients) => {
-        //const ingredients = {...this.state.ingredients};
-
         const itemsCount = Object.values(ingredients).reduce((a,b) => a+b, 0);
-
-
         this.setState({purchaseable: itemsCount > 0});
+
+        console.log("test git");
 
     }
 
